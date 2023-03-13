@@ -10,7 +10,6 @@ app.config['DEBUG'] = True
 @app.route("/",methods=['GET'])
 def home():
     return flask.jsonify({'principal':'Home'})
-
 app.register_blueprint(alumno)
 app.register_blueprint(dir)
 app.register_blueprint(maestros)
